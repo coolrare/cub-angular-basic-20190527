@@ -9,6 +9,8 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
 import { FormsModule } from '@angular/forms';
 import { ArticleComponent } from './article/article.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
+import { DemoPipe } from './demo.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,11 +20,13 @@ import { SearchBoxComponent } from './search-box/search-box.component';
     FooterComponent,
     SocialIconsComponent,
     ArticleComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    DemoPipe
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
