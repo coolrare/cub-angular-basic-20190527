@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CUB';
+  title: string;
+  keyword = 'test';
+
+  search(event: MouseEvent) {
+    console.log(event.altKey);
+    this.keyword = 'search';
+  }
 }
