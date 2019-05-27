@@ -53,17 +53,8 @@
     <aside class="col-md-4 sidebar-wrapper">
       <div id="widgetzone_be_WIDGET_ZONE" class="widgetzone">
 
-        <!-- Search START-->
-        <div class="widget search">
-          <div class="widget-content">
-            <div id="searchbox">
-              <input #input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" [(ngModel)]="keyword">
-              <input type="button" value="搜尋" id="searchbutton" (click)="search($event, input)">
-            </div>
-            {{ keyword }}
-          </div>
-        </div>
-        <!-- Search END -->
+        <app-search-box (searchKeyword)="doSearch($event)">
+        </app-search-box>
 
         <!-- Calendar START -->
         <div class="widget calendar">

@@ -127,3 +127,7 @@ https://wellwind.idv.tw/blog/2018/10/28/mastering-angular-14-dynamic-component-l
 ## @Input() 示意圖
 
 ![Input](images/input.jpg)
+
+## @Output() 示意圖
+
+![Output](images/output.jpg)

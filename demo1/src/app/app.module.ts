@@ -8,6 +8,7 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 import { FormsModule } from '@angular/forms';
 import { ArticleComponent } from './article/article.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ArticleComponent } from './article/article.component';
     HeaderComponent,
     FooterComponent,
     SocialIconsComponent,
-    ArticleComponent
+    ArticleComponent,
+    SearchBoxComponent
   ],
   imports: [
     BrowserModule,

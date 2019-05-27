@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Atricle } from '../atricle';
 
 @Component({
   selector: 'app-article',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
-  @Input() item;
+  @Input() item: Atricle;
 
   constructor() {}
 
