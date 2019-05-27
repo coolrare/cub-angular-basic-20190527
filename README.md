@@ -106,3 +106,7 @@ export class AppModule { }
 ## Emmet
 
 https://docs.emmet.io/abbreviations/syntax/
+
+## 減少在樣板中使用 ngSwitch 的法 (動態載入元件)
+
+https://wellwind.idv.tw/blog/2018/10/28/mastering-angular-14-dynamic-component-loader/
