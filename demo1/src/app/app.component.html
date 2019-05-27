@@ -1,5 +1,7 @@
   <app-header></app-header>
 
+  <h1 class="highlight">test</h1>
+
   <!-- CONTAINER START-->
   <section class="container">
     <div class="row">
@@ -75,8 +77,8 @@
           <div class="widget search">
             <div class="widget-content">
                 <div id="searchbox">
-                  <input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" [(ngModel)]="keyword">
-                  <input type="button" value="搜尋" id="searchbutton" (click)="search($event)">
+                  <input #input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" [(ngModel)]="keyword">
+                  <input type="button" value="搜尋" id="searchbutton" (click)="search($event, input)">
                 </div>
                 {{ keyword }}
             </div>

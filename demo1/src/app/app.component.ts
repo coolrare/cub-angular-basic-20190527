@@ -9,8 +9,8 @@ export class AppComponent {
   title: string;
   keyword = 'test';
 
-  search(event: MouseEvent) {
-    console.log(event.altKey);
+  search(event: MouseEvent, input: HTMLInputElement) {
+    console.dir(input.value);
     this.keyword = 'search';
   }
 }
