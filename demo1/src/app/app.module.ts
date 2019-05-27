@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 import { FormsModule } from '@angular/forms';
+import { ArticleComponent } from './article/article.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SocialIconsComponent
+    SocialIconsComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

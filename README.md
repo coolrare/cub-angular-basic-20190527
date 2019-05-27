@@ -114,12 +114,16 @@ https://wellwind.idv.tw/blog/2018/10/28/mastering-angular-14-dynamic-component-l
 ## ngIf 搭配 else 的用法
 
 ```html
-<div *ngIf="age >= 18">
+<div class="notify" *ngIf="age >= 18; else forbidden">
   hi~~
 </div>
 <ng-template #forbidden>
-  <div>
+  <div class="notify">
     forbidden content
   </div>
 </ng-template>
 ```
+
+## @Input() 示意圖
+
+![Input](images/input.jpg)

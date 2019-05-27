@@ -40,39 +40,9 @@
         <article class="post" id="post1"
           *ngFor="let item of articles;let index = index; let first = first; let last = last; let even = even; let odd = odd">
 
-          <header class="post-header">
-            <h2 class="post-title">
-              <a [href]="item.href">
-                <div [ngSwitch]="item.title">
-                  <div *ngSwitchCase="">
-                    (no title)
-                  </div>
-                  <div *ngSwitchDefault>
-                    {{ item.title}}
-                  </div>
-                </div>
-              </a>
-            </h2>
+          <app-article [item]="item"></app-article>
 
-            {{ outputTitle(item.title) }}
-
-            <div class="post-info clearfix">
-              <span class="post-date"><i class="glyphicon glyphicon-calendar"></i>2016/03/22 19:28</span>
-              <span class="post-author"><i class="glyphicon glyphicon-user"></i><a
-                  href="http://blog.miniasp.com/author/will.aspx">Will 保哥</a></span>
-              <span class="post-category"><i class="glyphicon glyphicon-folder-close"></i><a
-                  href="http://blog.miniasp.com/category/%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB.aspx">心得分享</a></span>
-            </div>
-          </header>
-          <section class="post-body text">
-            <p [innerHTML]="item.summary">
-            </p>
-            <p>... <a class="more"
-                href="http://blog.miniasp.com/post/2016/03/22/Does-Certification-Exam-Useful.aspx#continue">繼續閱讀</a> ...
-            </p>
-          </section>
         </article>
-
 
       </div>
     </section>

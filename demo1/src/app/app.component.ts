@@ -99,15 +99,5 @@ export class AppComponent {
     this.displayArticle = !this.displayArticle;
   }
 
-  outputTitle(title: string) {
-    switch (title) {
-      case '':
-        return '(no title)';
-        break;
 
-      default:
-        return title;
-        break;
-    }
-  }
 }
